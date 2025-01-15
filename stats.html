@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Playoffs Stats & Analysis | NFL Playoffs Hub</title>
+    <meta name="description" content="Comprehensive NFL playoff statistics, player performance metrics, team analytics, and historical data for the current playoff season.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ticker {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .playoff-bracket {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-[#013369] text-white shadow-lg fixed w-full z-50">
+        <div class="ticker overflow-hidden whitespace-nowrap py-2 bg-[#D50A0A] text-sm">
+            <span class="inline-block">🏈 Bills vs Chiefs - Q4 28-24 • Ravens vs Texans - Q3 21-17 • 49ers vs Packers - Starting Soon</span>
+        </div>
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="https://spencience.github.io/generated-website-1736688839253/nfl-playoffs.html" class="text-2xl font-bold">NFL PLAYOFFS</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/schedule.html" class="hover:text-[#D50A0A]">Schedule</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/teams.html" class="hover:text-[#D50A0A]">Teams</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/stats.html" class="hover:text-[#D50A0A]">Stats</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum.html" class="hover:text-[#D50A0A]">Forum</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow mt-24">
+        <div class="container mx-auto px-4 py-8">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Playoff Statistics & Analysis</h1>
+                <div class="flex space-x-4 mb-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/#team-stats.html" class="text-[#013369] hover:text-[#D50A0A]">Team Stats</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/#player-stats.html" class="text-[#013369] hover:text-[#D50A0A]">Player Stats</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/#historical.html" class="text-[#013369] hover:text-[#D50A0A]">Historical Data</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/#advanced.html" class="text-[#013369] hover:text-[#D50A0A]">Advanced Analytics</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Top Passing</h3>
+                    <div class="text-3xl font-bold text-[#D50A0A] mb-2">Josh Allen</div>
+                    <p class="text-gray-600">387 YDS, 3 TD</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Top Rushing</h3>
+                    <div class="text-3xl font-bold text-[#D50A0A] mb-2">Christian McCaffrey</div>
+                    <p class="text-gray-600">156 YDS, 2 TD</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Top Receiving</h3>
+                    <div class="text-3xl font-bold text-[#D50A0A] mb-2">Stefon Diggs</div>
+                    <p class="text-gray-600">142 YDS, 1 TD</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Top Defense</h3>
+                    <div class="text-3xl font-bold text-[#D50A0A] mb-2">Ravens</div>
+                    <p class="text-gray-600">4 Sacks, 2 INT</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h2 class="text-2xl font-bold mb-4">Team Performance Metrics</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3">Team</th>
+                                <th class="px-6 py-3">Points/Game</th>
+                                <th class="px-6 py-3">Yards/Game</th>
+                                <th class="px-6 py-3">Turnover Diff</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Ravens</td>
+                                <td class="px-6 py-4">31.5</td>
+                                <td class="px-6 py-4">428.3</td>
+                                <td class="px-6 py-4">+3</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">49ers</td>
+                                <td class="px-6 py-4">29.8</td>
+                                <td class="px-6 py-4">415.7</td>
+                                <td class="px-6 py-4">+2</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Bills</td>
+                                <td class="px-6 py-4">28.4</td>
+                                <td class="px-6 py-4">401.2</td>
+                                <td class="px-6 py-4">+1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Historical Trends</h2>
+                    <p class="text-gray-600 mb-4">Analysis of playoff performance patterns over the past decade</p>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/historical-analysis.html" class="text-[#013369] hover:text-[#D50A0A] font-semibold">View Full Analysis →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Advanced Analytics</h2>
+                    <p class="text-gray-600 mb-4">Deep dive into advanced metrics and predictive models</p>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/advanced-analytics.html" class="text-[#013369] hover:text-[#D50A0A] font-semibold">Explore Analytics →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#013369] text-white py-8">
+        <!-- Footer content remains the same as in template -->
+    </footer>
+</body>
+</html>

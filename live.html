@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Live NFL Playoffs Games | NFL Playoffs Hub</title>
+    <meta name="description" content="Stream live NFL playoff games, access real-time stats, and enjoy multi-game viewing with interactive features. Watch every touchdown and big play as it happens.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ticker {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .playoff-bracket {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+        }
+        .live-indicator {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-[#013369] text-white shadow-lg fixed w-full z-50">
+        <div class="ticker overflow-hidden whitespace-nowrap py-2 bg-[#D50A0A] text-sm">
+            <span class="inline-block">🏈 Bills vs Chiefs - Q4 28-24 • Ravens vs Texans - Q3 21-17 • 49ers vs Packers - Starting Soon</span>
+        </div>
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="https://spencience.github.io/generated-website-1736688839253/nfl-playoffs.html" class="text-2xl font-bold">NFL PLAYOFFS</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/schedule.html" class="hover:text-[#D50A0A]">Schedule</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/teams.html" class="hover:text-[#D50A0A]">Teams</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/stats.html" class="hover:text-[#D50A0A]">Stats</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum.html" class="hover:text-[#D50A0A]">Forum</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow mt-24">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Game Stream -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-lg shadow-lg p-4">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-900 rounded-lg mb-4">
+                            <div class="flex items-center justify-center h-full">
+                                <div class="text-center">
+                                    <div class="live-indicator inline-block px-3 py-1 rounded-full bg-red-600 text-white mb-4">LIVE</div>
+                                    <h2 class="text-white text-xl">Bills vs Chiefs</h2>
+                                    <p class="text-gray-400">Q4 - 2:34 Remaining</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-2xl font-bold">Bills vs Chiefs</h1>
+                            <div class="flex space-x-4">
+                                <button class="bg-[#013369] text-white px-4 py-2 rounded hover:bg-[#D50A0A]">Full Screen</button>
+                                <button class="bg-[#013369] text-white px-4 py-2 rounded hover:bg-[#D50A0A]">Stats</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Games -->
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-lg p-4">
+                        <h2 class="text-xl font-bold mb-4">Other Live Games</h2>
+                        <div class="space-y-4">
+                            <a href="/generated-website-1736688839253/watch/ravens-texans.html" class="block hover:bg-gray-50 p-4 rounded-lg border">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <span class="text-red-600 text-sm">LIVE</span>
+                                        <p class="font-semibold">Ravens vs Texans</p>
+                                        <p class="text-sm text-gray-600">Q3 - 21-17</p>
+                                    </div>
+                                    <button class="bg-[#013369] text-white px-3 py-1 rounded text-sm hover:bg-[#D50A0A]">Watch</button>
+                                </div>
+                            </a>
+                            <a href="/generated-website-1736688839253/watch/49ers-packers.html" class="block hover:bg-gray-50 p-4 rounded-lg border">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <span class="text-yellow-600 text-sm">STARTING SOON</span>
+                                        <p class="font-semibold">49ers vs Packers</p>
+                                        <p class="text-sm text-gray-600">8:15 PM ET</p>
+                                    </div>
+                                    <button class="bg-[#013369] text-white px-3 py-1 rounded text-sm hover:bg-[#D50A0A]">Watch</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Live Stats -->
+                    <div class="bg-white rounded-lg shadow-lg p-4">
+                        <h2 class="text-xl font-bold mb-4">Live Stats</h2>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Total Yards</span>
+                                <span>Bills 387 - Chiefs 412</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Passing</span>
+                                <span>Bills 256 - Chiefs 289</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Rushing</span>
+                                <span>Bills 131 - Chiefs 123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#013369] text-white py-8">
+        <!-- Footer content remains the same as template -->
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/about.html" class="hover:text-[#D50A0A]">About Us</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/contact.html" class="hover:text-[#D50A0A]">Contact</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/careers.html" class="hover:text-[#D50A0A]">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/news.html" class="hover:text-[#D50A0A]">News</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/media.html" class="hover:text-[#D50A0A]">Media</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/press.html" class="hover:text-[#D50A0A]">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/privacy.html" class="hover:text-[#D50A0A]">Privacy Policy</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/terms.html" class="hover:text-[#D50A0A]">Terms of Service</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/cookies.html" class="hover:text-[#D50A0A]">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/nfl" class="hover:text-[#D50A0A]">Twitter</a>
+                        <a href="https://facebook.com/nfl" class="hover:text-[#D50A0A]">Facebook</a>
+                        <a href="https://instagram.com/nfl" class="hover:text-[#D50A0A]">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 NFL Playoffs Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

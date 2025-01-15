@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your summit achievements and connect with fellow climbers at Mount Spencer. View real-time summit logs, share your experiences, and join our mountain community.">
+    <meta name="keywords" content="Mount Spencer, summit log, mountain climbing, hiking achievements, peak registry">
+    <title>Summit Log - Mount Spencer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .mountain-bg {
+            background: linear-gradient(180deg, #a8c0ff 0%, #3f4c6b 100%);
+        }
+        .peak-shape {
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
+        .log-entry:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <header class="bg-slate-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="/generated-website-1736982947428/" class="text-2xl font-bold hover:text-blue-300">Mount Spencer</a>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-6">
+                    <li><a href="/generated-website-1736982947428/trails.html" class="hover:text-blue-300">Trails</a></li>
+                    <li><a href="/generated-website-1736982947428/summit-log.html" class="hover:text-blue-300 font-bold">Summit Log</a></li>
+                    <li><a href="/generated-website-1736982947428/weather.html" class="hover:text-blue-300">Weather</a></li>
+                    <li><a href="/generated-website-1736982947428/virtual-climb.html" class="hover:text-blue-300">Virtual Climb</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="mountain-bg h-64 rounded-lg mb-8 relative overflow-hidden">
+            <div class="peak-shape bg-gray-200 h-48 w-48 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80"></div>
+            <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white text-center">Summit Log</h1>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section class="md:col-span-2">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h2 class="text-xl font-bold mb-4">Recent Summit Achievements</h2>
+                    <div class="space-y-4">
+                        <div class="log-entry p-4 border rounded-lg hover:shadow-md">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Sarah Johnson</h3>
+                                    <p class="text-sm text-gray-600">Summit reached: 7:15 AM - March 15, 2024</p>
+                                    <p class="mt-2">Perfect morning for a climb! Trail conditions were excellent, spotted some mountain goats near the peak.</p>
+                                </div>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Verified</span>
+                            </div>
+                        </div>
+                        <div class="log-entry p-4 border rounded-lg hover:shadow-md">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Mike Chen</h3>
+                                    <p class="text-sm text-gray-600">Summit reached: 2:30 PM - March 14, 2024</p>
+                                    <p class="mt-2">Challenging climb but worth every step. Sunset views were spectacular!</p>
+                                </div>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">Add Your Summit Log</h2>
+                    <form action="/generated-website-1736982947428/submit-log" method="GET" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="date" class="block text-sm font-medium text-gray-700">Summit Date</label>
+                            <input type="datetime-local" id="date" name="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="comments" class="block text-sm font-medium text-gray-700">Comments</label>
+                            <textarea id="comments" name="comments" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Submit Log</button>
+                    </form>
+                </div>
+            </section>
+            
+            <aside class="space-y-6">
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">Summit Statistics</h2>
+                    <div class="space-y-2">
+                        <p class="flex justify-between"><span>Total Summits Today:</span> <span class="font-bold">12</span></p>
+                        <p class="flex justify-between"><span>This Week:</span> <span class="font-bold">47</span></p>
+                        <p class="flex justify-between"><span>This Month:</span> <span class="font-bold">183</span></p>
+                        <p class="flex justify-between"><span>All Time:</span> <span class="font-bold">15,742</span></p>
+                    </div>
+                </section>
+                
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">Current Conditions</h2>
+                    <div class="space-y-2">
+                        <p class="flex justify-between"><span>Temperature:</span> <span class="font-bold">28°F</span></p>
+                        <p class="flex justify-between"><span>Wind:</span> <span class="font-bold">15 mph NW</span></p>
+                        <p class="flex justify-between"><span>Visibility:</span> <span class="font-bold">Good</span></p>
+                        <a href="/generated-website-1736982947428/weather.html" class="text-blue-600 hover:underline block mt-4">View Full Forecast →</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-white p-4 mt-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-sm">© 2024 Mount Spencer. All rights reserved.</div>
+            <div class="mt-4 md:mt-0">
+                <ul class="flex space-x-4">
+                    <li><a href="/generated-website-1736982947428/contact.html" class="hover:text-blue-300">Contact</a></li>
+                    <li><a href="/generated-website-1736982947428/privacy.html" class="hover:text-blue-300">Privacy</a></li>
+                    <li><a href="/generated-website-1736982947428/terms.html" class="hover:text-blue-300">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

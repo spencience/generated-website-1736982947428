@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Playoffs Teams | 2024 Playoff Teams, Stats & Analysis</title>
+    <meta name="description" content="Comprehensive coverage of all NFL playoff teams, including team stats, player rosters, and playoff performance analysis for the 2024 season.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ticker {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .playoff-bracket {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-[#013369] text-white shadow-lg fixed w-full z-50">
+        <div class="ticker overflow-hidden whitespace-nowrap py-2 bg-[#D50A0A] text-sm">
+            <span class="inline-block">🏈 Bills vs Chiefs - Q4 28-24 • Ravens vs Texans - Q3 21-17 • 49ers vs Packers - Starting Soon</span>
+        </div>
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="https://spencience.github.io/generated-website-1736688839253/nfl-playoffs.html" class="text-2xl font-bold">NFL PLAYOFFS</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/schedule.html" class="hover:text-[#D50A0A]">Schedule</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/teams.html" class="hover:text-[#D50A0A]">Teams</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/stats.html" class="hover:text-[#D50A0A]">Stats</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum.html" class="hover:text-[#D50A0A]">Forum</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow mt-24">
+        <div class="container mx-auto px-4 py-8">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">2024 NFL Playoff Teams</h1>
+                <div class="flex space-x-4 mb-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/#afc.html" class="px-4 py-2 bg-[#013369] text-white rounded hover:bg-[#D50A0A]">AFC Teams</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/#nfc.html" class="px-4 py-2 bg-[#013369] text-white rounded hover:bg-[#D50A0A]">NFC Teams</a>
+                </div>
+            </div>
+
+            <section id="afc" class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">AFC Teams</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="team-card bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">Baltimore Ravens</h3>
+                        <p class="text-gray-600 mb-4">Record: 13-4</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-green-600">AFC North Champions</span>
+                            <a href="https://spencience.github.io/generated-website-1736688839253/teams/ravens.html" class="text-[#013369] hover:text-[#D50A0A]">View Details →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">Buffalo Bills</h3>
+                        <p class="text-gray-600 mb-4">Record: 11-6</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-green-600">AFC East Champions</span>
+                            <a href="https://spencience.github.io/generated-website-1736688839253/teams/bills.html" class="text-[#013369] hover:text-[#D50A0A]">View Details →</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">Kansas City Chiefs</h3>
+                        <p class="text-gray-600 mb-4">Record: 11-6</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-green-600">AFC West Champions</span>
+                            <a href="https://spencience.github.io/generated-website-1736688839253/teams/chiefs.html" class="text-[#013369] hover:text-[#D50A0A]">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nfc" class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">NFC Teams</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="team-card bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">San Francisco 49ers</h3>
+                        <p class="text-gray-600 mb-4">Record: 12-5</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-green-600">NFC West Champions</span>
+                            <a href="https://spencience.github.io/generated-website-1736688839253/teams/49ers.html" class="text-[#013369] hover:text-[#D50A0A]">View Details →</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">Green Bay Packers</h3>
+                        <p class="text-gray-600 mb-4">Record: 9-8</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-blue-600">Wild Card</span>
+                            <a href="https://spencience.github.io/generated-website-1736688839253/teams/packers.html" class="text-[#013369] hover:text-[#D50A0A]">View Details →</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">Detroit Lions</h3>
+                        <p class="text-gray-600 mb-4">Record: 12-5</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-green-600">NFC North Champions</span>
+                            <a href="https://spencience.github.io/generated-website-1736688839253/teams/lions.html" class="text-[#013369] hover:text-[#D50A0A]">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-gray-50 rounded-lg p-6 mb-8">
+                <h2 class="text-xl font-bold mb-4">Team Statistics Overview</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full table-auto">
+                        <thead class="bg-[#013369] text-white">
+                            <tr>
+                                <th class="px-4 py-2">Team</th>
+                                <th class="px-4 py-2">Points For</th>
+                                <th class="px-4 py-2">Points Against</th>
+                                <th class="px-4 py-2">Point Differential</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="px-4 py-2">Ravens</td>
+                                <td class="px-4 py-2">483</td>
+                                <td class="px-4 py-2">280</td>
+                                <td class="px-4 py-2 text-green-600">+203</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-4 py-2">49ers</td>
+                                <td class="px-4 py-2">491</td>
+                                <td class="px-4 py-2">298</td>
+                                <td class="px-4 py-2 text-green-600">+193</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#013369] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/about.html" class="hover:text-[#D50A0A]">About Us</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/contact.html" class="hover:text-[#D50A0A]">Contact</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/careers.html" class="hover:text-[#D50A0A]">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/news.html" class="hover:text-[#D50A0A]">News</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/media.html" class="hover:text-[#D50A0A]">Media</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/press.html" class="hover:text-[#D50A0A]">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/privacy.html" class="hover:text-[#D50A0A]">Privacy Policy</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/terms.html" class="hover:text-[#D50A0A]">Terms of Service</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1736688839253/cookies.html" class="hover:text-[#D50A0A]">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/nfl" class="hover:text-[#D50A0A]">Twitter</a>
+                        <a href="https://facebook.com/nfl" class="hover:text-[#D50A0A]">Facebook</a>
+                        <a href="https://instagram.com/nfl" class="hover:text-[#D50A0A]">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 NFL Playoffs Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

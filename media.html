@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Playoffs Media Center | Photos, Videos & Highlights</title>
+    <meta name="description" content="Access official NFL Playoffs media content including game highlights, press conferences, player interviews, and exclusive behind-the-scenes footage.">
+    <meta name="keywords" content="NFL playoffs media, game highlights, player interviews, press conferences, NFL photos, NFL videos">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ticker {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .playoff-bracket {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+        }
+        .media-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Header remains the same as template -->
+    <header class="bg-[#013369] text-white shadow-lg fixed w-full z-50">
+        <!-- Ticker and nav content same as template -->
+    </header>
+
+    <main class="flex-grow mt-24">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold mb-8">NFL Playoffs Media Center</h1>
+            
+            <!-- Media Categories Navigation -->
+            <div class="flex flex-wrap gap-4 mb-8">
+                <a href="https://spencience.github.io/generated-website-1736688839253/media/highlights.html" class="px-6 py-2 bg-[#013369] text-white rounded-full hover:bg-[#D50A0A] transition">Game Highlights</a>
+                <a href="https://spencience.github.io/generated-website-1736688839253/media/interviews.html" class="px-6 py-2 bg-[#013369] text-white rounded-full hover:bg-[#D50A0A] transition">Player Interviews</a>
+                <a href="https://spencience.github.io/generated-website-1736688839253/media/press.html" class="px-6 py-2 bg-[#013369] text-white rounded-full hover:bg-[#D50A0A] transition">Press Conferences</a>
+                <a href="https://spencience.github.io/generated-website-1736688839253/media/photos.html" class="px-6 py-2 bg-[#013369] text-white rounded-full hover:bg-[#D50A0A] transition">Photo Gallery</a>
+            </div>
+
+            <!-- Featured Content -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-6">Featured Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="media-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-[#013369] relative">
+                            <div class="absolute inset-0 flex items-center justify-center text-white">
+                                <span class="text-6xl">▶️</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold mb-2">Bills vs Chiefs Q4 Highlights</h3>
+                            <p class="text-gray-600">Watch the thrilling fourth quarter action between the Bills and Chiefs</p>
+                        </div>
+                    </div>
+
+                    <div class="media-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-[#013369] relative">
+                            <div class="absolute inset-0 flex items-center justify-center text-white">
+                                <span class="text-6xl">▶️</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold mb-2">Ravens Defense Masterclass</h3>
+                            <p class="text-gray-600">See how the Ravens shut down the Texans offense in Q3</p>
+                        </div>
+                    </div>
+
+                    <div class="media-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-48 bg-[#013369] relative">
+                            <div class="absolute inset-0 flex items-center justify-center text-white">
+                                <span class="text-6xl">▶️</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold mb-2">49ers Pre-Game Coverage</h3>
+                            <p class="text-gray-600">Live coverage from the field as teams prepare for kickoff</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Interviews -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-6">Latest Interviews</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="font-bold mb-2">Coach McDermott Post-Game Press Conference</h3>
+                        <p class="text-gray-600 mb-4">Bills head coach discusses strategy and key moments</p>
+                        <a href="https://spencience.github.io/generated-website-1736688839253/media/interviews/mcdermott-postgame.html" class="text-[#D50A0A] hover:underline">Watch Now →</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="font-bold mb-2">Lamar Jackson MVP Performance</h3>
+                        <p class="text-gray-600 mb-4">Exclusive interview with Ravens QB after dominant showing</p>
+                        <a href="https://spencience.github.io/generated-website-1736688839253/media/interviews/jackson-postgame.html" class="text-[#D50A0A] hover:underline">Watch Now →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery Preview -->
+            <section>
+                <h2 class="text-2xl font-bold mb-6">Latest Photos</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-[#013369] h-40 rounded-lg"></div>
+                    <div class="bg-[#013369] h-40 rounded-lg"></div>
+                    <div class="bg-[#013369] h-40 rounded-lg"></div>
+                    <div class="bg-[#013369] h-40 rounded-lg"></div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/media/photos.html" class="inline-block px-6 py-2 bg-[#D50A0A] text-white rounded-full hover:bg-[#013369] transition">View All Photos</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer remains the same as template -->
+    <footer class="bg-[#013369] text-white py-8">
+        <!-- Footer content same as template -->
+    </footer>
+</body>
+</html>

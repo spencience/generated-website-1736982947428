@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Playoffs Forum - Discuss Games, Teams & Predictions</title>
+    <meta name="description" content="Join the NFL Playoffs discussion forum. Share your thoughts, predictions, and analysis of playoff games with other football fans.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ticker {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .playoff-bracket {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+        }
+        .forum-card:hover {
+            transform: translateY(-2px);
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-[#013369] text-white shadow-lg fixed w-full z-50">
+        <div class="ticker overflow-hidden whitespace-nowrap py-2 bg-[#D50A0A] text-sm">
+            <span class="inline-block">🏈 Bills vs Chiefs - Q4 28-24 • Ravens vs Texans - Q3 21-17 • 49ers vs Packers - Starting Soon</span>
+        </div>
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="https://spencience.github.io/generated-website-1736688839253/nfl-playoffs.html" class="text-2xl font-bold">NFL PLAYOFFS</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/schedule.html" class="hover:text-[#D50A0A]">Schedule</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/teams.html" class="hover:text-[#D50A0A]">Teams</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/stats.html" class="hover:text-[#D50A0A]">Stats</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum.html" class="hover:text-[#D50A0A]">Forum</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow mt-24">
+        <div class="container mx-auto px-4 py-8">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">NFL Playoffs Discussion Forum</h1>
+                <div class="flex space-x-4 mb-6">
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum/latest.html" class="px-4 py-2 bg-[#013369] text-white rounded hover:bg-[#D50A0A]">Latest Discussions</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum/popular.html" class="px-4 py-2 bg-[#013369] text-white rounded hover:bg-[#D50A0A]">Popular Topics</a>
+                    <a href="https://spencience.github.io/generated-website-1736688839253/forum/new-post.html" class="px-4 py-2 bg-[#D50A0A] text-white rounded hover:bg-[#013369]">Start New Discussion</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <div class="forum-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-2"><a href="https://spencience.github.io/generated-website-1736688839253/forum/thread/bills-chiefs-predictions.html" class="text-[#013369] hover:text-[#D50A0A]">Bills vs Chiefs Predictions - Who's Taking This One?</a></h2>
+                            <p class="text-gray-600 mb-4">Hot discussion about tonight's matchup between Buffalo and Kansas City. Share your predictions!</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>156 replies</span>
+                                <span class="mx-2">•</span>
+                                <span>Last reply 2 minutes ago</span>
+                            </div>
+                        </div>
+                        <span class="bg-[#013369] text-white px-3 py-1 rounded-full text-sm">Hot</span>
+                    </div>
+                </div>
+
+                <div class="forum-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-2"><a href="https://spencience.github.io/generated-website-1736688839253/forum/thread/ravens-defense-analysis.html" class="text-[#013369] hover:text-[#D50A0A]">Ravens Defense Analysis - Championship Caliber?</a></h2>
+                            <p class="text-gray-600 mb-4">Breaking down the Ravens' defensive performance in the playoffs so far.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>89 replies</span>
+                                <span class="mx-2">•</span>
+                                <span>Last reply 15 minutes ago</span>
+                            </div>
+                        </div>
+                        <span class="bg-[#D50A0A] text-white px-3 py-1 rounded-full text-sm">Trending</span>
+                    </div>
+                </div>
+
+                <div class="forum-card bg-white rounded-lg shadow-md p-6 hover:shadow-lg">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-2"><a href="https://spencience.github.io/generated-website-1736688839253/forum/thread/49ers-playoff-run.html" class="text-[#013369] hover:text-[#D50A0A]">49ers' Path to the Super Bowl - Discussion Thread</a></h2>
+                            <p class="text-gray-600 mb-4">Analyzing the 49ers' chances and their potential matchups on the road to the Super Bowl.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>234 replies</span>
+                                <span class="mx-2">•</span>
+                                <span>Last reply 45 minutes ago</span>
+                            </div>
+                        </div>
+                        <span class="bg-gray-500 text-white px-3 py-1 rounded-full text-sm">Active</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-bold mb-4">Forum Categories</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="/generated-website-1736688839253/forum/game-day-discussions.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center">
+                        <h4 class="font-semibold text-[#013369]">Game Day Discussions</h4>
+                        <p class="text-gray-600 text-sm">Live game threads and reactions</p>
+                    </a>
+                    <a href="/generated-website-1736688839253/forum/analysis.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center">
+                        <h4 class="font-semibold text-[#013369]">Analysis & Strategy</h4>
+                        <p class="text-gray-600 text-sm">Deep dives into plays and strategies</p>
+                    </a>
+                    <a href="/generated-website-1736688839253/forum/predictions.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md text-center">
+                        <h4 class="font-semibold text-[#013369]">Predictions & Picks</h4>
+                        <p class="text-gray-600 text-sm">Share your playoff predictions</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#013369] text-white py-8">
+        <!-- Footer content remains the same -->
+    </footer>
+</body>
+</html>
